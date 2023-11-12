@@ -52,9 +52,9 @@
             // 
             this.rodape.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(49)))), ((int)(((byte)(60)))));
             this.rodape.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.rodape.Location = new System.Drawing.Point(0, 482);
+            this.rodape.Location = new System.Drawing.Point(0, 552);
             this.rodape.Name = "rodape";
-            this.rodape.Size = new System.Drawing.Size(750, 48);
+            this.rodape.Size = new System.Drawing.Size(800, 48);
             this.rodape.TabIndex = 0;
             // 
             // txtUsuario
@@ -62,7 +62,7 @@
             this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(168)))), ((int)(((byte)(171)))));
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtUsuario.Location = new System.Drawing.Point(245, 220);
+            this.txtUsuario.Location = new System.Drawing.Point(260, 233);
             this.txtUsuario.MaxLength = 20;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(262, 19);
@@ -73,7 +73,7 @@
             this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(168)))), ((int)(((byte)(171)))));
             this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtSenha.Location = new System.Drawing.Point(244, 299);
+            this.txtSenha.Location = new System.Drawing.Point(259, 312);
             this.txtSenha.MaxLength = 8;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(262, 19);
@@ -91,7 +91,7 @@
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.btnEntrar.ForeColor = System.Drawing.Color.White;
-            this.btnEntrar.Location = new System.Drawing.Point(244, 380);
+            this.btnEntrar.Location = new System.Drawing.Point(259, 393);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(262, 48);
             this.btnEntrar.TabIndex = 11;
@@ -107,7 +107,7 @@
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFechar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(90)))), ((int)(((byte)(203)))));
-            this.btnFechar.Location = new System.Drawing.Point(710, 0);
+            this.btnFechar.Location = new System.Drawing.Point(741, 5);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnFechar.Size = new System.Drawing.Size(40, 40);
@@ -120,7 +120,7 @@
             // 
             this.btnVerSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(168)))), ((int)(((byte)(171)))));
             this.btnVerSenha.Image = global::Folha_Fácil.Properties.Resources.olho2;
-            this.btnVerSenha.Location = new System.Drawing.Point(475, 293);
+            this.btnVerSenha.Location = new System.Drawing.Point(490, 306);
             this.btnVerSenha.Name = "btnVerSenha";
             this.btnVerSenha.Size = new System.Drawing.Size(32, 32);
             this.btnVerSenha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -132,7 +132,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Folha_Fácil.Properties.Resources.logo;
-            this.pictureBox4.Location = new System.Drawing.Point(294, 23);
+            this.pictureBox4.Location = new System.Drawing.Point(309, 36);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(161, 144);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -142,7 +142,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Folha_Fácil.Properties.Resources.entrar;
-            this.pictureBox3.Location = new System.Drawing.Point(213, 360);
+            this.pictureBox3.Location = new System.Drawing.Point(228, 373);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(324, 88);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -152,7 +152,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Folha_Fácil.Properties.Resources.login;
-            this.pictureBox2.Location = new System.Drawing.Point(213, 272);
+            this.pictureBox2.Location = new System.Drawing.Point(228, 285);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(323, 73);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -162,7 +162,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Folha_Fácil.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(213, 193);
+            this.pictureBox1.Location = new System.Drawing.Point(228, 206);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(323, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -181,7 +181,7 @@
             this.btnMinimizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimizar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(90)))), ((int)(((byte)(203)))));
             this.btnMinimizar.Image = global::Folha_Fácil.Properties.Resources.janela_minimizada;
-            this.btnMinimizar.Location = new System.Drawing.Point(681, -10);
+            this.btnMinimizar.Location = new System.Drawing.Point(712, -11);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnMinimizar.Size = new System.Drawing.Size(23, 40);
@@ -192,7 +192,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(251, 193);
+            this.label1.Location = new System.Drawing.Point(266, 206);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 14);
             this.label1.TabIndex = 22;
@@ -202,7 +202,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(251, 272);
+            this.label2.Location = new System.Drawing.Point(266, 285);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 14);
             this.label2.TabIndex = 23;
@@ -213,7 +213,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ClientSize = new System.Drawing.Size(750, 530);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnMinimizar);
@@ -232,6 +232,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnVerSenha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

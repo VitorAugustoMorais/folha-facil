@@ -52,7 +52,20 @@ namespace Folha_Fácil
             proximaTela.Show(this);
             this.Hide();
 
-            
+        }
+
+        private void menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            // Criar uma nova instância do formulário de destino
+            ProcurarColaborador proximaTela = new ProcurarColaborador();
+            proximaTela.Show(this);
+            this.Hide();
+
         }
     }
 }

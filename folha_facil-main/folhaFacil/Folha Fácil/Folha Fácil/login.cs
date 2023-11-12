@@ -25,7 +25,7 @@ namespace Folha_Fácil
         }
 
         // ESTABELECENDO CONEXÃO COM O BANCO DE DADOS SQL SERVER
-        SqlConnection cnt = new SqlConnection(@"Data Source=DESKTOP-UU3KD7O\SQLEXPRESS; integrated security=SSPI; initial Catalog=FolhaFacil");
+        SqlConnection cnt = new SqlConnection(@"Data Source=LUCAS; integrated security=SSPI; initial Catalog=FOLHAFACIL");
         SqlCommand cmd = new SqlCommand();
         SqlDataReader leitura;
 
@@ -58,26 +58,30 @@ namespace Folha_Fácil
                 try
                 {
                     cnt.Open();
-                    cmd.CommandText = "SELECT * FROM UsuarioLogin WHERE Usuario = @Usuario AND Senha = @Senha";
-                    cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text);
-                    cmd.Parameters.AddWithValue("@Senha", txtSenha.Text);
-                    cmd.Connection = cnt;
-                    leitura = cmd.ExecuteReader();
+                    using (SqlCommand cmd = new SqlCommand("SELECT * FROM UsuarioLogin WHERE Usuario = @Usuario AND Senha = @Senha", cnt))
+                    {
+                        cmd.Parameters.AddWithValue("@Usuario", txtUsuario.Text);
+                        cmd.Parameters.AddWithValue("@Senha", txtSenha.Text);
+                        using (SqlDataReader leitura = cmd.ExecuteReader())
+                        {
 
-                    if (leitura.HasRows)
-                    {
-                        menu abriMenu = new menu();
-                        abriMenu.Show(this);
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Usuario ou senha invalido.", "Acesso negado!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        txtUsuario.Clear();
-                        txtSenha.Clear();
-                        txtUsuario.Focus();
+                            if (leitura.HasRows)
+                            {
+                                menu abriMenu = new menu();
+                                abriMenu.Show(this);
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Usuario ou senha invalido.", "Acesso negado!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                txtUsuario.Clear();
+                                txtSenha.Clear();
+                                txtUsuario.Focus();
+                            }
+                        }
                     }
                 }
+
                 catch (Exception erro)
                 {
                     MessageBox.Show(erro.Message);
@@ -87,15 +91,17 @@ namespace Folha_Fácil
                 {
                     cnt.Close();
                 }
-            }
-
-           
-        }
+            }      
+       }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
 
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

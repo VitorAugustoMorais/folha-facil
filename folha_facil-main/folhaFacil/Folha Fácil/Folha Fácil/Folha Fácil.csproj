@@ -52,6 +52,12 @@
     <Compile Include="CadastrarColaborador.Designer.cs">
       <DependentUpon>CadastrarColaborador.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditarColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarColaborador.Designer.cs">
+      <DependentUpon>EditarColaborador.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,16 +70,28 @@
     <Compile Include="menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProcurarColaborador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcurarColaborador.Designer.cs">
+      <DependentUpon>ProcurarColaborador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CadastrarColaborador.resx">
       <DependentUpon>CadastrarColaborador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarColaborador.resx">
+      <DependentUpon>EditarColaborador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcurarColaborador.resx">
+      <DependentUpon>ProcurarColaborador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
